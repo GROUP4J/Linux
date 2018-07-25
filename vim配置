@@ -1,4 +1,4 @@
-##配置vim
+##配置vim##
 编辑/etc/vimrc文件的配置后，只有root用户在使用vim时，配置是有效的
 ###解决方法
 复制/etc/vimrc到用户主目录下（~/.vimrc）即可
