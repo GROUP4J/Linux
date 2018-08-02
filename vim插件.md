@@ -1,4 +1,4 @@
-##显示树形目录插件NERDTree安装和使用
+## 显示树形目录插件NERDTree安装和使用
 安装：直接按照 https://github.com/scrooloose/nerdtree安装会导致无法使用，需要先安装pathogen,pathogen是管理插件的插件  
 pathogen项目地址：项目地址 https://github.com/tpope/vim-pathogen  
 在.vim文件夹下建立autoload和bundle目录 
