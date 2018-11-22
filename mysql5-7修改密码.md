@@ -45,6 +45,7 @@ sudo ufw default deny
 
 sudo ufw allow 3306     
 
+（sudo ufw allow from any to any port 3306 proto tcp）
 
 3. 重启mysql
 
@@ -52,3 +53,13 @@ sudo /etc/init.d/mysql restart
 
 systemctl restart mysql.service
 
+查看mysql可以访问权限
+ 命令：ss -ltn
+ State       Recv-Q Send-Q Local Address:Port               Peer Address:Port
+LISTEN      0      80        0.0.0.0:3306                  0.0.0.0:* 
+LISTEN      0      128       0.0.0.0:5355                  0.0.0.0:*
+LISTEN      0      128       0.0.0.0:22                    0.0.0.0:*            
+LISTEN      0      128          [::]:5355                     [::]:*                  
+LISTEN      0      128          [::]:22                       [::]:*                
+LISTEN      0      128         [::1]:6010                     [::]:*                  
+LISTEN      0      128         [::1]:6011                     [::]:*
